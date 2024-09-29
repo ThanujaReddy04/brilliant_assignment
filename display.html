@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted Data</title>
+</head>
+<body>
+    <h1>Submitted User Data</h1>
+    <ul>
+        {% for user in users %}
+            <li>{{ user.name }} ({{ user.age }} years old): {{ user.bio }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
